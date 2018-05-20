@@ -16,7 +16,7 @@ Evaluate an expression represented by a String!
 ```CSharp
 using ExpressionEvaluation;
 ```
-2) Call the Setup function before calculating anything:
+2) Call the Setup function before calculating anything, usually in the start of Main:
 ```CSharp
 Evaluator.Setup();
 ```

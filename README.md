@@ -39,4 +39,8 @@ double number = Evaluator.Evaluate("(2+5)*2"); // 14
 # Currently supports:
 - Addition (+)
 - Subtraction (-)
-- Multiplication (*)
+- Multiplication (\*)
+- Division (/)
+- Exponent (^)
+- Left parenthesis (()
+- Right parenthesis ())

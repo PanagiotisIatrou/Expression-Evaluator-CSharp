@@ -33,4 +33,10 @@ double number = Evaluator.Evaluate("5^3"); // 125
 double number = Evaluator.Evaluate("2+5*2"); // 12
 double number = Evaluator.Evaluate("5^3"); // 125
 double number = Evaluator.Evaluate("1.234^8+5/2"); // 7.87676775
+double number = Evaluator.Evaluate("(2+5)*2"); // 14
 ```
+
+# Currently supports:
+- Addition (+)
+- Subtraction (-)
+- Multiplication (*)

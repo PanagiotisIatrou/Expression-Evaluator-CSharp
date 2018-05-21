@@ -35,7 +35,6 @@ namespace ExpressionEvaluation
 			// Format the expression so that its calculatable
 			expression = expression.Replace("e", e);
 			expression = expression.Replace("π", pi);
-			Console.WriteLine(expression);
 
 			// Do the calculations and return the result
 			for (int i = 0; i < expression.Length; i++)

@@ -23,7 +23,6 @@ Evaluator.Setup();
 3) You can now start calculating!
 
 # Examples:
-- Stores 2 in 'number'
 ```CSharp
 double number = Evaluator.Evaluate("1+1"); // 2
 double number = Evaluator.Evaluate("10-1"); // 9

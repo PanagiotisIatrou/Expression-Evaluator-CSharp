@@ -8,7 +8,7 @@ namespace ExpressionEvaluation
 	{
 		static void Main(string[] args)
 		{
-			
+
 		}
 	}
 
@@ -17,6 +17,8 @@ namespace ExpressionEvaluation
 		private enum Operator { Addition = 1, Subtraction = 1, Multiplication = 2, Division = 2, Modulo = 2, Exponent = 3, Null = 0 };
 		static private bool wasDigit;
 		static private string number;
+		static private readonly string e = "2.71828182";
+		static private readonly string pi = "3.14159265";
 
 		static public void Setup()
 		{
@@ -29,6 +31,13 @@ namespace ExpressionEvaluation
 		{
 			Stack<double> Operators = new Stack<double>();
 			Stack<char> Operands = new Stack<char>();
+
+			// Format the expression so that its calculatable
+			expression = expression.Replace("e", e);
+			expression = expression.Replace("π", pi);
+			Console.WriteLine(expression);
+
+			// Do the calculations and return the result
 			for (int i = 0; i < expression.Length; i++)
 			{
 				char c = expression[i];

@@ -89,10 +89,10 @@ namespace ExpressionEvaluation
 							number = "";
 						}
 
-						char c2;
-						bool empty = !Operands.TryPeek(out c2);
+						bool empty = Operands.Count == 0;
 						if (!empty)
 						{
+							char c2 = Operands.Peek();
 							if (operatorPower(c2) >= operatorPower(c))
 							{
 								double num1 = Operators.Pop();
@@ -102,7 +102,6 @@ namespace ExpressionEvaluation
 								double endResult = calculateTwo(num1, num2, op);
 
 								Operators.Push(endResult);
-								Operands.TryPeek(out c2);
 							}
 						}
 						Operands.Push(c);
